@@ -37,4 +37,9 @@ public class MainActivity extends AppCompatActivity {
         mapIntent.setPackage("com.google.android.apps.maps");
         startActivity(mapIntent);
     }
+    public void biodata(View view)
+    {
+        Intent biodataku= new Intent(MainActivity.this,BiodataActivity.class);
+        startActivity(biodataku);
+    }
 }

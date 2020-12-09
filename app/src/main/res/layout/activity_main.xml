@@ -5,7 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_background">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:layout_marginLeft="7dp"
+            android:scaleX="1.1"
+            android:background="@drawable/ic_bgbawah"
+            ></LinearLayout>
+    </LinearLayout>
+    
     <LinearLayout
         android:id="@+id/linear_logoamikom"
         android:layout_width="wrap_content"
@@ -32,42 +47,67 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_logoamikom"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="120dp"
         android:layout_marginRight="16dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/buttonwebamikom"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Web Kampus"
-            android:onClick="webamikom"/>
-        <Button
-            android:id="@+id/buttonpanggil"
-            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttonwebamikom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="Web Kampus"
+                android:onClick="webamikom"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonpanggil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="Panggil"
+                android:onClick="panggil"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonlokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="lokasi"
+                android:onClick="map"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Panggil"
-            android:onClick="panggil"/>
-        <Button
-            android:id="@+id/buttonlokasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="lokasi"
-            android:onClick="map"/>
-        <Button
-            android:id="@+id/buttonbiodata"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Biodata"
-            android:onClick="biodata"/>
-        <Button
-            android:id="@+id/buttonabout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="About Me"
-            android:onClick="aboutme"/>
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <Button
+                android:id="@+id/buttonbiodata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="Biodata"
+                android:onClick="biodata"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/buttonabout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="About Me"
+                android:onClick="aboutme"/>
+        </LinearLayout>
 
     </LinearLayout>
-
 
 </RelativeLayout>
