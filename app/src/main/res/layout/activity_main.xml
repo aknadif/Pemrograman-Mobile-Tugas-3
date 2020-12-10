@@ -5,52 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_background">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="600dp"
-            android:layout_marginLeft="7dp"
-            android:scaleX="1.1"
-            android:background="@drawable/ic_bgbawah"
-            ></LinearLayout>
     </LinearLayout>
-    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:scaleX="1.1"
+        android:background="@drawable/ic_bgbawah"
+        android:layout_alignParentBottom="true">
+    </RelativeLayout>
     <LinearLayout
         android:id="@+id/linear_logoamikom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:orientation="vertical">
-
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="50dp"
             android:src="@drawable/logo" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stmik Amikom Surakarta"
             android:textSize="18dp" />
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/linear_logoamikom"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="16dp"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_marginLeft="10dp"
             android:layout_width="180dp"
@@ -83,7 +76,6 @@
                 android:text="lokasi"
                 android:onClick="map"/>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="180dp"
             android:layout_height="wrap_content"
@@ -99,6 +91,15 @@
                 android:onClick="biodata"/>
             <Button
                 android:layout_marginTop="10dp"
+                android:id="@+id/buttonabsen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape"
+                android:text="Presensi"
+                android:onClick="absen"/>
+            <Button
+                android:layout_marginTop="10dp"
                 android:id="@+id/buttonabout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,7 +108,5 @@
                 android:text="About Me"
                 android:onClick="aboutme"/>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

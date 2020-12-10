@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LihatBiodataActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".LihatAbsenActivity">
 
-    <TextView
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Halaman Data Biodata"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30dp"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
         android:orientation="vertical"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true">
-
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Absen"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/lihatbionama"
+            android:id="@+id/lihatabsnama"
             android:text="Nama"
             android:textAppearance="?android:attr/textAppearanceMedium" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/lihatbionim"
+            android:id="@+id/lihatabsnim"
             android:text="Nim"
             android:textAppearance="?android:attr/textAppearanceMedium" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/lihatbioemail"
-            android:text="Email"
+            android:id="@+id/lihatabskelas"
+            android:text="Kelas"
             android:textAppearance="?android:attr/textAppearanceMedium" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/lihatbioalamat"
-            android:text="Alamat"
+            android:id="@+id/lihatabssmt"
+            android:text="Semester"
             android:textAppearance="?android:attr/textAppearanceMedium" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:id="@+id/lihatbionomor"
-            android:text="Nomor Hp"
+            android:id="@+id/lihatabsmatkul"
+            android:text="Mata Kuliah"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/lihatabsdate"
+            android:text="Tanggal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
-
 </RelativeLayout>

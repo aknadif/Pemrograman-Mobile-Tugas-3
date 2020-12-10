@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:padding="20dp"
         android:background="@drawable/ic_bgatasabout">
 
@@ -35,12 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:layout_marginTop="-100dp">
+        android:layout_marginTop="-70dp">
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:background="#B872F2"
+            app:cardBackgroundColor="#B872F2"
             android:layout_margin="10dp">
 
             <RelativeLayout
@@ -67,7 +67,7 @@
             android:layout_width="0dp"
             android:layout_height="125dp"
             android:layout_weight="1"
-            android:background="#B872F2"
+            app:cardBackgroundColor="#B872F2"
             android:layout_margin="10dp">
 
             <RelativeLayout

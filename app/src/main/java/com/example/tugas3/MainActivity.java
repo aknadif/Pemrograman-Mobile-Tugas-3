@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void panggil(View view)
-    {String nomor = "0271 7851501" ;
+    {String nomor = "02717851501" ;
         Intent panggil = new Intent(Intent.ACTION_DIAL);
         panggil.setData(Uri.fromParts("tel",nomor,null));
         startActivity(panggil);
@@ -41,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent biodataku= new Intent(MainActivity.this,BiodataActivity.class);
         startActivity(biodataku);
+    }
+    public void absen(View view)
+    {
+        Intent absenku= new Intent( MainActivity.this,AbsenActivity.class);
+        startActivity(absenku);
     }
 }
